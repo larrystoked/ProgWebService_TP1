@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'TP1';
+  showNavLink = true;
+
+  onNavLinkClick() {
+    // Cette méthode est appelée lorsque le lien est cliqué
+    // Elle masque le lien en définissant showNavLink sur false
+    this.showNavLink = false;
+  }
 }
