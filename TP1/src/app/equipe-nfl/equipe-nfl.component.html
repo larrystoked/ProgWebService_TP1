@@ -2,21 +2,18 @@
   <h1>Liste des équipes NFL</h1>
 
   <form>
-    <!-- Menu déroulant pour les équipes NFL -->
     <label for="equipeDropdown">Sélectionnez une équipe NFL :</label>
     <select id="equipeDropdown" [(ngModel)]="equipeSelectionnee" name="equipeDropdown">
       <option *ngFor="let equipe of equipesNFL" [value]="equipe.teamAbv">{{ equipe.teamCity }}</option>
     </select>
 
-    <!-- Détails de l'équipe sélectionnée -->
+
     <div *ngIf="equipeSelectionnee">
       <h2>Équipe sélectionnée :</h2>
       <h3>{{ equipeSelectionnee }}</h3>
-      <!-- Ajoutez d'autres détails d'équipe ici selon vos besoins -->
       <p>Ville : {{ getEquipeVille(equipeSelectionnee) }}</p>
       <img [src]="getEquipeLogo(equipeSelectionnee)" alt="{{ equipeSelectionnee }}" width="250">
       
-      <!-- Bouton pour afficher le roster de l'équipe sélectionnée -->
       <button type="button" (click)="afficherRoster()">Afficher le roster</button>
 
       <button type="button" (click)="afficherHoraire()" class="bouton-rouge">Consulter le calendrier</button>
@@ -24,7 +21,6 @@
     </div>
   </form>
 
-  <!-- Template de chargement si les données sont en cours de récupération -->
   <ng-template #loadingTemplate>
     <p>Chargement des données...</p>
   </ng-template>

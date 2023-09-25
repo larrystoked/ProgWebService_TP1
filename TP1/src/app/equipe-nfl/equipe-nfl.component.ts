@@ -61,5 +61,4 @@ export class EquipeNFLComponent implements OnInit {
       this.router.navigate(['/horaire', this.equipeSelectionnee]);
     }
   }
-  
 }

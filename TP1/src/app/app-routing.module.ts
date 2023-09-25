@@ -6,7 +6,6 @@ import { HoraireComponent } from './horaire/horaire.component';
 
 
 const routes: Routes = [
-  // Autres routes...
   { path: 'roster/:equipe', component: RosterComponent },
   { path: 'equipe-nfl', component: EquipeNFLComponent },
   { path: 'horaire/:equipe', component: HoraireComponent },
