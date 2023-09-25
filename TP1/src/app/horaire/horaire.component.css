@@ -1,0 +1,81 @@
+
+table {
+    background-color: rgba(255, 255, 255, 0.8); 
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+
+.home-header {
+    background-color: #ff0000; 
+    color: #fff; 
+  }
+  
+  
+
+  .away-header {
+    background-color: #001f3f; 
+    color: #fff; 
+  }
+  
+
+  .scroll-box th:nth-child(1),
+  .scroll-box th:nth-child(2)
+ {
+    background-color: #ff0000; 
+    color: #fff; 
+  }
+
+  .scroll-box th:nth-child(4),
+  .scroll-box th:nth-child(5)
+ {
+    background-color: #0034e0; 
+    color: #fff; 
+    text-align: center;
+  }
+
+
+.scroll-box {
+  max-height: 400px; 
+  overflow-y: auto; 
+  width: 100%;
+}
+
+.scroll-box table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px; 
+  background-color: rgba(255, 255, 255, 0.8); 
+}
+
+.scroll-box table,
+.scroll-box th,
+.scroll-box td {
+  border: 1px solid #ddd;
+  color: #070048; 
+}
+
+.scroll-box th,
+.scroll-box td {
+  padding: 8px;
+  text-align: left;
+}
+
+.scroll-box th {
+  background-color: #f2f2f2; 
+}
+
+
+
+  

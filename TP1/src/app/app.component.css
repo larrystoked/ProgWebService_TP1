@@ -1,0 +1,56 @@
+/* Style pour le bouton de navigation */
+.bouton-rouge {
+    background-color: #ff0000; /* Couleur de fond rouge */
+    color: #fff; /* Couleur du texte blanc */
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    max-width: 200px; /* Largeur maximale du bouton */
+    margin: 0 auto; /* Centre horizontalement */
+    display: block; /* Afficher en tant que bloc pour la marge automatique */
+  }
+  
+  .bouton-rouge:hover {
+    background-color: #cc0000; /* Couleur de fond rouge au survol */
+  }
+  
+  /* Style pour le formulaire */
+form {
+    background-color: rgba(255, 255, 255, 0.8); /* Fond blanc opaque avec opacité */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Ombre légère autour du formulaire */
+  }
+  
+  /* Style pour les étiquettes du formulaire */
+  label {
+    font-weight: bold;
+  }
+  
+  /* Style pour les champs de saisie du formulaire */
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* Style pour le bouton de soumission du formulaire */
+  button[type="submit"] {
+    background-color: #007bff; /* Couleur de fond bleue */
+    color: #fff; /* Couleur du texte blanc */
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3; /* Couleur de fond bleue au survol */
+  }
+  

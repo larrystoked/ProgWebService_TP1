@@ -54,10 +54,35 @@
   <div class="container-center">
     <nav>
       <ul>
-        <li *ngIf="showNavLink"><a routerLink="/equipe-nfl" (click)="onNavLinkClick()" class="nav-button">Équipes NFL</a></li>
+        <li *ngIf="showNavLink"><a routerLink="/equipe-nfl" (click)="onNavLinkClick(); masquerAjouterEquipe()" class="nav-button">Équipes NFL</a></li>
       </ul>
     </nav>
-  
     <router-outlet></router-outlet>
+
+    <button type="button" (click)="ajouterEquipeActive = !ajouterEquipeActive" class="bouton-rouge">Ajouter une Équipe</button>
+   
+    <div *ngIf="ajouterEquipeActive">
+        <h2>Ajouter une équipe</h2>
+        <form (submit)="ajouterEquipe()">
+          <div>
+            <label for="nom">Nom de l'équipe :</label>
+            <input type="text" id="nom" [(ngModel)]="equipeToAdd.nom" name="nom" required>
+          </div>
+          <div>
+            <label for="ville">Ville de l'équipe :</label>
+            <input type="text" id="ville" [(ngModel)]="equipeToAdd.ville" name="ville" required>
+          </div>
+          <div>
+            <label for="abreviation">Abréviation de l'équipe :</label>
+            <input type="text" id="abreviation" [(ngModel)]="equipeToAdd.abreviation" name="abreviation" required>
+          </div>
+          <div>
+            <button type="submit">Ajouter l'équipe</button>
+          </div>
+        </form>
+      </div>
+      
+    
   </div>
+  
   

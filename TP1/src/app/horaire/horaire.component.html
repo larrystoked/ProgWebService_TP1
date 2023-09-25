@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="scroll-box"> 
+    <table>
+      <thead>
+        <tr>
+          <th class="home-header"></th>
+          <th class="home-header">Équipe à domicile</th>
+          <th>Semaine de jeu</th>
+          <th class="away-header">Équipe à l'extérieur</th>
+          <th class="away-header"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let jeu of horaire.body.schedule">
+          <td><img [src]="'./assets/logos/' + jeu.home + '.webp'" alt="{{ jeu.home }}" width="50"></td>
+          <td class="home">{{ jeu.home }}</td>
+          <td>{{ jeu.gameWeek }}</td>
+          <td class="away">{{ jeu.away }}</td>
+          <td><img [src]="'./assets/logos/' + jeu.away + '.webp'" alt="{{ jeu.home }}" width="50"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+  
+  

@@ -95,3 +95,9 @@
     opacity: 0.2;
     filter: alpha(opacity=20%);
   }
+
+  
+.bouton-rouge {
+  background-color: red; 
+  color: white; 
+}

@@ -8,12 +8,14 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { RosterComponent } from './roster/roster.component';
+import { HoraireComponent } from './horaire/horaire.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EquipeNFLComponent,
-    RosterComponent
+    RosterComponent,
+    HoraireComponent
   ],
   imports: [
     BrowserModule,
