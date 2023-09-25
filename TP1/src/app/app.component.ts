@@ -9,8 +9,10 @@ export class AppComponent {
   showNavLink = true;
 
   onNavLinkClick() {
-    // Cette méthode est appelée lorsque le lien est cliqué
-    // Elle masque le lien en définissant showNavLink sur false
+
     this.showNavLink = false;
   }
+
+  title = 'TP1';
+  
 }

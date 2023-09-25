@@ -7,11 +7,13 @@ import { EquipeNFLComponent } from './equipe-nfl/equipe-nfl.component';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { RosterComponent } from './roster/roster.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EquipeNFLComponent
+    EquipeNFLComponent,
+    RosterComponent
   ],
   imports: [
     BrowserModule,

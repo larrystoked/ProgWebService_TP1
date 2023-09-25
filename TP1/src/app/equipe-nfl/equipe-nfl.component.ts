@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 // Assurez-vous que le type Equipe correspond à la structure de vos données
 import { Equipe } from './equipe.model'; // Remplacez 'equipe.model' par le chemin de votre modèle
@@ -13,7 +14,7 @@ export class EquipeNFLComponent implements OnInit {
   equipesNFL: Equipe[] = []; // Utilisez le type approprié
   equipeSelectionnee: string | undefined;
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private router: Router) { } // Injectez Router dans le constructeur
 
   ngOnInit(): void {
     const apiUrl = 'https://tank01-nfl-live-in-game-real-time-statistics-nfl.p.rapidapi.com/getNFLTeams?rosters=true&schedules=true&topPerformers=true&teamStats=true';
@@ -48,5 +49,12 @@ export class EquipeNFLComponent implements OnInit {
 
   getEquipeLogo(teamAbv: string): string {
     return `./assets/logos/${teamAbv}.webp`; // Utilisez le chemin relatif pour accéder au logo
+  }
+
+  afficherRoster() {
+    if (this.equipeSelectionnee) {
+      // Naviguez vers la page du roster avec l'équipe sélectionnée comme paramètre
+      this.router.navigate(['/roster', this.equipeSelectionnee]);
+    }
   }
 }
