@@ -1,1 +1,35 @@
-<p>roster works!</p>
+<div class="container">
+<div class="scroll-box">
+    <thead>
+      <tr>
+        <th>Numéro</th>
+        <th>Position</th>
+        <th>Nom</th>
+        <th>École</th>
+        <th>Âge</th>
+        <th>Taille</th>
+        <th>Poids</th>
+        <!-- Ajoutez des en-têtes pour les statistiques ici -->
+        <th>Matchs Joués</th>
+        
+        <!-- Ajoutez d'autres en-têtes de statistiques ici -->
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let joueur of joueurs.body.roster">
+        <td>{{ joueur.jerseyNum }}</td>
+        <td>{{ joueur.pos }}</td>
+        <td>{{ joueur.espnName }}</td>
+        <td>{{ joueur.school }}</td>
+        <td>{{ joueur.age }}</td>
+        <td>{{ joueur.height }}</td>
+        <td>{{ joueur.weight }}</td>
+        <!-- Affichez les valeurs des statistiques ici -->
+        <td>{{ joueur.stats.gamesPlayed }}</td>
+        <!-- Affichez d'autres valeurs de statistiques ici -->
+      </tr>
+    </tbody>
+</div>
+</div>
+
+  
